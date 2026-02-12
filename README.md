@@ -7,6 +7,8 @@
 ## migrations
 python manage.py migrate
 
-
 ## Populate
 python populate_rango.py
+
+## Clear sessions (should do this daily)
+python manage.py clearsessions
