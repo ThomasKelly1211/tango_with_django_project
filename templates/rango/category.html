@@ -16,17 +16,26 @@
                 {% endfor %}
             </u1>
             {% else %}
-            <strong>No pages currently in category.</strong>
+            <strong>No pages currently in category</strong>
             {% endif %}
         {% else %}
-            The specified category does not exist.
+            The specified category does not exist
+        {% endif %}
+        </div>
+
+        <div>
+        {% if category %} 
+            <br/>
+            <a href="/rango/category/{{category.slug }}/add_page/">Add Page</a> <br/>
+        {% else %}
+            <strong>The specified category does not exist</strong>
         {% endif %}
         </div>
 
         <div>
             
             <br><strong>Click Here To Go Back To Index Page</strong>
-            <br><a href="/rango/">Index</a><br />
+            <br><a href="/../">Index</a><br />
         </div>
     </body>
     
